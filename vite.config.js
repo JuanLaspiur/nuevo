@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   proxy: {
     '/api': {
-      target: 'http://localhost:3001', 
+      target: 'https://coraqr-back2.onrender.com/api/', 
       changeOrigin: true,
       rewrite: (path) => path.replace(/^\/api/, ''), 
     }
